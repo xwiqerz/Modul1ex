@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Uppgift 1
+      let test = 5 + 3;
+      const greet = "hejsan";
+      var numberEight = 8;
+
+      //Uppgift 2
+      let boolean = true;
+      let number = 9;
+      let string = "string";
+      let object = {
+        name: "ja",
+        age: 9,
+        born: "1999",
+      };
+      let array = ["äpple", "banan", "mango"];
+
+      //Uppgift 3
+      function sumInput(a, b) {
+        return a + b;
+      }
+      let sum = sumInput(5, 6);
+      console.log("summan blir: " + sum);
+
+      //Uppgift 4
+      console.log(Date());
+
+      //Uppgift 5
+      let person = {
+        firstName: "Casper",
+        lastName: "Cool",
+        id: 1337,
+        printFullName: function () {
+          let printValue = this.firstName + " " + this.id + " " + this.lastName;
+          console.log(printValue);
+        },
+      };
+      person.printFullName();
+      //Uppgift 6
+      let arr = [4, 8, 15, 16, 23, 42];
+      let last = arr[arr.length - 1];
+      console.log(last);
+      function under20(item) {
+        return item < 20;
+      }
+      let saveunder20 = arr.filter(under20);
+      console.log(arr.filter(under20));
+
+      function dubbla(dub) {
+        return dub * 2;
+      }
+      let doublearray = saveunder20.map(dubbla);
+      console.log(doublearray);
+
+      doublearray.forEach((number) => console.log(number));
+
+      //Uppgift 7
+      let loopSex = 1;
+      while (loopSex <= 6) {
+        if (loopSex <= 3) {
+          console.log("Loop " + loopSex);
+        }
+        if (loopSex > 3) {
+          console.log("Almost done..");
+        }
+        loopSex++;
+      }
+      console.log("Done!");
+    </script>
+  </body>
+</html>
